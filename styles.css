@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Rubik:wght@400;700&display=swap');
+:root{
+    
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body {
+    font-family: "Outfit";
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://digitshack.com/codepen/mentor4/bg-pattern-top.svg), url(https://digitshack.com/codepen/mentor4/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 42vh,
+        left 45vw top 50vh;
+}
+.page{
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    max-width: 300px;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.primary h3{
+    color: var(--Verydarkdesaturatedblue);
+    font-weight: 700;
+}
+.primary p{
+    color: var(--Darkgrayishblue);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.primary span{
+    color: var(--Darkgrayishblue);
+    font-weight: 400;
+}
+.primary{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid #dadada;
+}
+.primary img{
+    width: 30%;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -44px;
+    margin-bottom: 0.5rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+.footer h3{
+    color: var(--Verydarkdesaturatedblue);
+    font-weight: 700;
+}
+.footer p{
+    color: var(--Darkgrayishblue);
+    font-weight: 400; 
+    font-size: 10px;
+}
+@media(max-width: 500px){
+    .container{
+        width: 250px;
+    }
+}
